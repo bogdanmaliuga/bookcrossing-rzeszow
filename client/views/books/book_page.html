@@ -1,0 +1,23 @@
+<template name="bookPage">
+    
+          {{> bookItem}}
+    
+
+<div class="container" >
+    <div class="col-sm-12 col-md-12">
+        <div class="thumbnail">
+     {{#each comments}}
+      {{> comment}}<br>
+    {{/each}}
+         
+   
+    {{#if currentUser}}
+    {{> commentSubmit}}
+  {{else}}
+    <p>Please log in to leave a comment.</p>
+  {{/if}}
+        </div>
+    </div>
+    </div>
+</template>
+    

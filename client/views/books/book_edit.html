@@ -1,0 +1,48 @@
+<template name="bookEdit">
+    <form class="main container thumbnail">
+        {{#if currentUser}}
+        <div class="form-group">
+            <label class="control-label" for="title">Title</label>
+            <div class="controls">
+                <input name="title" id="title" type="text" value="{{title}}" placeholder="Book title" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="author">Author</label>
+            <div class="controls">
+                <input name="author" id="author" type="text" value="{{author}}" placeholder="Book author" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="ibsn">ISBN</label>
+            <div class="controls">
+                <input name="isbn" id="isbn" type="text" value="{{isbn}}" placeholder="Book isbn" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="location">Location</label>
+            <div class="controls">
+                <input name="location" id="location" type="text" value="{{location}}" placeholder="Book location" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="status">Status</label>
+            <select class="form-control" id="status" name="status">
+                <option>Free</option>
+                <option>Not Free</option>
+            </select>
+        </div>
+              <input type="submit" value="Submit" class="btn btn-primary" />
+        <hr/>
+        <div class="control-group">
+            <div class="controls">
+                <a class="btn btn-danger delete" href="#">Delete book</a>
+            </div>
+        </div>
+        {{else}}
+        <div class="container ">
+            <p>Please log in to edit book</p>
+        </div>
+        {{/if}}
+    </form>
+</template>

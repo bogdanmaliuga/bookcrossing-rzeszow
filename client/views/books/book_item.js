@@ -1,0 +1,4 @@
+Template.bookItem.helpers({
+
+ 
+});

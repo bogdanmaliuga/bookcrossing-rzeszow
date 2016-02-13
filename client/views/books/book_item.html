@@ -1,0 +1,17 @@
+<template name="bookItem">
+    <div class="col-sm-12 col-md-12">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>{{title}} <br><small><i>{{author}}</i></small></h3>
+                <p class="alert alert-info"><span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> ISBN: {{isbn}}</p>
+                <p class="alert alert-warning"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Location: {{location}}</p>
+                <p class="alert alert-success"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Status: {{status}}</p>
+                 <p><a href="{{pathFor 'bookPage'}}" class="discuss btn btn-primary">Discuss</a>
+                <a href="{{pathFor 'bookEdit'}}" class="discuss btn btn-default">Edit</a></p>
+                
+                
+                <a href="{{pathFor 'bookPage'}}"><span class="badge">{{commentsCount}} </span>comments</a>
+            </div>
+        </div>
+    </div>
+</template>

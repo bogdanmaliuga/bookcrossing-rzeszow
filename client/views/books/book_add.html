@@ -1,0 +1,37 @@
+<template name="bookAdd">
+    <form class="main form container thumbnail">
+        <div class="form-group">
+            <label class="control-label" for="title">Title</label>
+            <div class="controls">
+                <input name="title" id="title" type="text" value="" placeholder="Book title" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="author">Author</label>
+            <div class="controls">
+                <input name="author" id="author" type="text" value="" placeholder="Book author" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="ibsn">ISBN</label>
+            <div class="controls">
+                <input name="isbn" id="isbn" type="text" value="" placeholder="Book isbn" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="location">Location</label>
+            <div class="controls">
+                <input name="location" id="location" type="text" value="" placeholder="Book location" class="form-control" />
+            </div>
+        </div>
+   <div class="form-group">
+  <label class="control-label" for="status">Status</label>
+  <select class="form-control" id="status" name="status">
+    <option>Free</option>
+    <option>Not Free</option>
+   </select>
+</div>
+        
+        <input type="submit" value="Submit" class="btn btn-primary" />
+    </form>
+</template>
